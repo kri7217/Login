@@ -1,0 +1,90 @@
+.login_main_section{
+    margin-top: 6rem;
+}
+
+.login_first_section{
+    display: flex;
+    justify-content: center;
+}
+
+.whiteSmoke{
+    color: whitesmoke;
+}
+
+.seperator{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.main{
+    margin: auto;
+    width: 40%;
+    height: 50%;
+    background: white;
+}
+
+.main_header{
+    background:  rgba(7, 87, 133, 0.733);
+    height: 3.5em;
+    padding: 1em;
+}
+
+.form-control{
+    font-size: smaller;
+    background: whitesmoke;
+    padding: 1.2rem;
+}
+
+.sign_in{
+    background:  rgba(7, 87, 133, 0.733);
+    padding: 0.3rem;
+    width: 50%;
+}
+
+.login_footer{
+    background:  rgba(7, 87, 133, 0.733);
+    height: 0.4rem;
+}
+
+.social-btns  .btn{
+  font-size: xx-small;
+  width: 40%;
+  padding-left: 0.2rem;
+}
+
+.alt_login div{
+    flex-grow: 1;
+}
+
+div hr{
+    border: 1px solid black;
+}
+
+.rounded-circle{
+    width: 10px;
+    height: 10px;
+    background: black;
+    align-self: center;
+}
+
+.btn span{
+    padding-left: 0.7rem;
+}
+
+.btn-fb{
+    background-color: #395697;
+    color: white;
+}
+.btn-tw{
+    background-color: #55acee;
+    color: white;
+}
+.btn-gplus{
+    background-color: #dd4b39;
+    color: white;
+}
+.btn-li{
+    background-color: #0082ca;
+    color: white;
+}
