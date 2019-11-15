@@ -15,9 +15,15 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    this.authService.isUserLoggedIn.subscribe(status => {
-      this.isUserPresent = status
-    })
+     this.authService.isUserLogged()
+    .subscribe(d=>{
+      if(d){
+        this.isUserPresent = true
+      }
+      else{
+        this.isUserPresent = false
+      }     
+     })
   }
   Logout() {
     this.authService.SignOut()
