@@ -34,6 +34,10 @@ export class AuthService {
       }
     })
   }
+  
+   isUserLogged(){
+   return this.afAuth.authState
+  }
 
   // Sign in with email/password
   SignIn(email, password) {
@@ -62,10 +66,12 @@ export class AuthService {
     return this.AuthLogin(new auth.GoogleAuthProvider());
   } 
 
+  // Sign in with Facebook
   FacebookAuth(){
     return this.AuthLogin(new auth.FacebookAuthProvider());
   }
 
+  // Sign in with Twitter
   TwitterAuth(){
     return this.AuthLogin(new auth.TwitterAuthProvider())
   }
