@@ -9,7 +9,7 @@
       <div class="main_header whiteSmoke">Login</div>
       <div class="d-flex flex-column m-3">
         <div class="input-group">
-          <input class="form-control" placeholder="Enter your Name" type="text">
+          <input class="form-control" placeholder="Enter your Name" #name type="text">
           <div class="input-group-append">
             <span class="input-group-text">
               <img src="../../assets/person.svg">
@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="input-group mt-3">
-          <input class="form-control" type="text" placeholder="Password">
+          <input class="form-control" type="password" #password placeholder="Password">
           <div class="input-group-append">
             <span class="input-group-text">
               <img src="../../assets/lock.svg">
@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="d-flex justify-content-between mt-2">
-          <button class="btn sign_in whiteSmoke"><small>SIGN IN</small></button>
+          <button class="btn sign_in whiteSmoke" (click)="SignInWithUser(name.value,password.value)"><small>SIGN IN</small></button>
           <button class="btn btn-sm"><small>Lost your Password?</small></button>
         </div>
       </div>
@@ -44,15 +44,15 @@
         </div>
           <div class="social-btns text-center mt-3">
             <div class="d-flex justify-content-around">
-              <button type="button" class="btn btn-sm btn-fb"><i class="fa fa-facebook left"></i><span>Sign in with
+              <button type="button" class="btn btn-sm btn-fb" (click)="onSignInWithProvider('facebook')"><i class="fa fa-facebook left"></i><span>Sign in with
                   Facebook</span></button>
-              <button type="button" class="btn btn-sm btn-gplus"><i class="fa fa-google-plus left"></i><span>Sign in
+              <button type="button" class="btn btn-sm btn-gplus" (click)="onSignInWithProvider('google')"><i class="fa fa-google-plus left"></i><span>Sign in
                   with Google+</span></button>
             </div>
             <div class="d-flex justify-content-around mt-2">
-              <button type="button" class="btn btn-sm btn-tw"><i class="fa fa-twitter left"></i><span>Sign in with
+              <button type="button" class="btn btn-sm btn-tw"(click)="onSignInWithProvider('twitter')"><i class="fa fa-twitter left"></i><span>Sign in with
                   Twitter</span></button>
-              <button type="button" class="btn btn-sm btn-li"><i class="fa fa-linkedin left"></i><span>Sign in with
+              <button type="button" class="btn btn-sm btn-li" ><i class="fa fa-linkedin left"></i><span>Sign in with
                   Linkedin</span></button>
             </div>
           </div>

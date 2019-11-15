@@ -1,5 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<header></header>
-<app-login></app-login>
+<header class="d-flex flex-row-reverse">
+    <button class="btn " *ngIf="isUserPresent" (click)="Logout()">Logout</button>
+</header>
+<!-- <app-login></app-login> -->
 
 <router-outlet></router-outlet>
